@@ -24,12 +24,14 @@ document.getElementsByTagName(`h3`)[0].innerText="This is a smaller header with 
 
 let numbers = [2,4,6,8]
 let sum = 0;
-document.querySelector(`body`).innerHTML += `<h4>Total numbers : ${numbers} </h4>`
+document.querySelector(`body`).innerHTML += `<ul>Total numbers :</ul>`
 
 for (let i = 0; i < numbers.length; i++){
+    document.querySelector(`ul`).innerHTML += `<li>${numbers[i]}</li>`
     sum=sum+numbers[i]
-}
-document.querySelector(`body`).innerHTML += `<h4>The sum of ${numbers} is: ${sum}<h4>`
+    
+    }
+document.querySelector(`ul`).innerHTML += `<li>The sum of ${numbers} is: ${sum}</li>`
 
 
 // BONUS HOMEWORK
@@ -44,8 +46,11 @@ document.querySelector(`body`).innerHTML += `<h4>The sum of ${numbers} is: ${sum
 
 
 let recipeName = prompt(`Enter the name of your recipe.`);
-let ingredients = prompt(`How many ingredients do you need?`);
+let ingredients = parseInt(prompt(`How many ingredients do you need?`));
+let niza = [];
+document.querySelector(`table`).innerHTML += `<tr><th>${recipeName}<tr><th>`
 
-
-
-document.querySelector(`body`).innerHTML += `<h2>The recipe "${recipeName}" requires ${ingredients} ingredients!</h2>`
+for(let i = 0; i < ingredients; i++){
+        document.querySelector(`ul`).innerHTML += `<table border= 1px><td>${niza[i] = prompt(`Enter ingredient`)}</td></table>`
+}
+console.log(niza);
