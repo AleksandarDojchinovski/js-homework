@@ -40,7 +40,7 @@ function isColor(strColor){
 
 txtBtn.click(function(e){
     if(inputText.val() == ""){
-        alert('Enter text!')
+       return alert('Enter text!')
     }
       if(isColor(inputColor.val())){
     result.html(`${inputText.val()}`).css('color',`${inputColor.val()}`)
