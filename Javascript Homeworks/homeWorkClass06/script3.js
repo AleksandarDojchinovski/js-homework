@@ -20,7 +20,6 @@ btn.addEventListener("click",function(){
     for(let i = 0; i < ingredients.value; i++){
         document.getElementById("recipeInput").innerHTML += `<input id ="ing${i}" placeholder = "Ingredient ${i+ 1}"/> <br/><br/>`   
     }
-    console.log(ingArray);
     document.getElementById("recipeInput").innerHTML += `<button id = "submit">Confirm!</button>`
     let confirm = document.getElementById("submit");
 
