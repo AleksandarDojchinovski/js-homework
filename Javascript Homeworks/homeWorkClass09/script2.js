@@ -23,9 +23,9 @@ function BookInfo(title,author,readingStatus){
     this.author = author;
     this.readingStatus = readingStatus;
     this.info = function(){
-        if(readingStatus)
+        if(readingStatus){
     return (`Already read "${title}" by ${author}.`)
-   
+        }
     else{
     return (`You still need to read "${title}" by ${author}.`)
 }
